@@ -8,5 +8,5 @@
     timeout: 0
 
 - name: get JSON stats
-  command: /root/Automation/monitor_SLICE1.sh statsJSON Data
+  command: /root/Automation/monitor_SLICE1.sh statlJSON Data
 
