@@ -1,0 +1,12 @@
+---
+- name: monitoring_slice1
+  command: /root/Automation/monitor_SLICE1.sh execute '"bin","start"' 'SIMULATION' 'simulation/simulations/N2_SLICE1'
+
+- name: Wait
+  wait_for:
+    delay: 25
+    timeout: 0
+
+- name: get JSON stats
+  command: /root/Automation/monitor_SLICE1.sh statsJSON Data
+
