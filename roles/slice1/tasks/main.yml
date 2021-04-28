@@ -7,6 +7,8 @@
     delay: 25
     timeout: 0
 
-- name: get JSON stats
+- name: get long JSON stats
   command: /root/Automation/monitor_SLICE1.sh statlJSON Data
 
+- name: get short JSON stats
+  command: /root/Automation/monitor_SLICE1.sh statsJSON Data
